@@ -4,11 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Acme Dashboard",
-    default: "Acme Dashboard",
+    template: "%s | 神族九帝-神卡助手",
+    default: "神卡助手",
   },
-  description: "The official Next.js Learn Dashboard built with App Router.",
-  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+  description:
+    "大流量套餐，流量不限量，月付19元，首月0元，全国通用，支持多终端，支持多平台，支持多设备，支持多运营商，支持多地区，",
+  metadataBase: new URL("https://ka.shenzjd.com"),
 };
 
 export default function RootLayout({
