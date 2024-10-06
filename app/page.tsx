@@ -1,4 +1,4 @@
-import Card from "./Card1";
+import Card from "./card";
 
 export default function Page() {
   return (
