@@ -1,11 +1,12 @@
 import Card from "./card";
+import data from "./data.json";
 
-export default function Page() {
+export default async function Page() {
   return (
-    <main className="flex">
-      <Card>
-        <h1>hello world</h1>
-      </Card>
+    <main className="flex justify-center">
+      {data.map((item, index) => (
+        <Card key={index} {...item} />
+      ))}
     </main>
   );
 }
