@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "p0.meituan.net",
+        hostname: "staticali.wi-fi.cn",
         // port: "",
         // pathname: "",
       },
