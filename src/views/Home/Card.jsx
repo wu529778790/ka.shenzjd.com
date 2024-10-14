@@ -5,10 +5,14 @@ import PropTypes from "prop-types";
  * @param {Object} data - 组件数据对象。
  * @param {string} data.img - 图片的 URL。
  * @param {string} data.title - 卡片的标题。
+ * @param {string} data.url - 卡片的 URL。
  */
 function Card({ data }) {
+  const handleClick = () => {
+    window.open(data.url);
+  };
   return (
-    <div className="card">
+    <div className="card" onClick={handleClick}>
       <img src={data.img} alt={data.title} />
       <div className="card-content">
         <h3>{data.title}</h3>
@@ -21,6 +25,7 @@ Card.propTypes = {
   data: PropTypes.shape({
     img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
   }).isRequired,
 };
 
