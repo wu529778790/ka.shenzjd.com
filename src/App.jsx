@@ -1,14 +1,7 @@
-import data from "./data.json";
-import Card from "./components/Card";
+import Index from "./views/Home/index";
 
 function App() {
-  return (
-    <div>
-      {data.map((item, index) => {
-        return <Card key={index} data={item} />;
-      })}
-    </div>
-  );
+  return <Index />;
 }
 
 export default App;
