@@ -12,11 +12,11 @@ function Card({ data }) {
     window.open(data.url);
   };
   return (
-    <div className="card" onClick={handleClick}>
-      <img src={data.img} alt={data.title} />
-      <div className="card-content">
-        <h3>{data.title}</h3>
-      </div>
+    <div
+      className="w-1/3 p-1 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
+      onClick={handleClick}>
+      <img className="w-full" src={data.img} alt={data.title} />
+      <h3 className="text-xl">{data.title}</h3>
     </div>
   );
 }

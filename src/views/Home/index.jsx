@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Index() {
   return (
-    <div className="flex">
+    <div className="flex flex-wrap">
       {data.map((item, index) => {
         return <Card key={index} data={item} />;
       })}
